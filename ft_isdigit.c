@@ -1,20 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/19 19:34:11 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/09/19 19:56:25 by tlasnier         ###   ########.fr       */
+/*   Created: 2026/09/19 19:50:04 by tlasnier          #+#    #+#             */
+/*   Updated: 2026/09/19 19:54:36 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+int	ft_isdigit(int c)
+{
+	if (c >= 48 && c <= 57)
+		return (1);
+	return (0);
+}
 
-int	ft_atoi(const char *str);
-int	ft_isalpha(int c);
-int	ft_isdigit(int c);
+/* #include "libft.h"
+#include <ctype.h>
+#include <stdio.h>
 
-#endif
+int main(int argc, char **argv)
+{
+	(void) argc;
+	printf("   isdigit: %d\nft_isdigit: %d\n"
+	, isdigit(ft_atoi(argv[1])), ft_isdigit(ft_atoi(argv[1])));
+} */
