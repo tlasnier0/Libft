@@ -1,26 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/19 19:34:11 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/09/20 00:03:28 by tlasnier         ###   ########.fr       */
+/*   Created: 2026/09/19 23:49:25 by tlasnier          #+#    #+#             */
+/*   Updated: 2026/09/20 00:04:54 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-# include <stddef.h>
+size_t	ft_strlen(const char *str)
+{
+	size_t	i;
 
-int		ft_atoi(const char *str);
-int		ft_isalpha(int c);
-int		ft_isdigit(int c);
-int		ft_isalnum(int c);
-int		ft_isascii(int c);
-int		ft_isprint(int c);
-size_t	ft_strlen(const char *str);
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
+}
 
-#endif
+/* #include <string.h>
+#include <stdio.h>
+int main(int argc, char **argv)
+{
+	(void) argc;
+	printf("   strlen: %zu\nft_strlen: %zu\n",
+	 strlen(argv[1]), ft_strlen(argv[1]));
+} */
