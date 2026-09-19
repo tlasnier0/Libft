@@ -1,21 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/19 19:34:11 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/09/19 21:57:29 by tlasnier         ###   ########.fr       */
+/*   Created: 2026/09/19 21:48:20 by tlasnier          #+#    #+#             */
+/*   Updated: 2026/09/19 21:58:00 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-int	ft_atoi(const char *str);
-int	ft_isalpha(int c);
-int	ft_isdigit(int c);
-int	ft_isalnum(int c);
+int	ft_isalnum(int c)
+{
+	if (ft_isalpha(c) || ft_isdigit(c))
+		return (1);
+	return (0);
+}
 
-#endif
+/* #include <ctype.h>
+#include <stdio.h>
+
+int main(int argc, char **argv)
+{
+	(void) argc;
+	printf("   isalnum: %d\nft_isalnum: %d\n"
+	, isalnum(ft_atoi(argv[1])), ft_isalnum(ft_atoi(argv[1])));
+} */
