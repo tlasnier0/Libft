@@ -6,7 +6,7 @@
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/20 15:39:28 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/09/20 15:58:42 by tlasnier         ###   ########.fr       */
+/*   Updated: 2026/09/20 19:33:44 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	ft_bzero(void *ptr, size_t length)
 	return ;
 }
 
-#include <stdio.h>
+/* #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 
@@ -49,4 +49,4 @@ int main(int argc, char **argv)
 		i, array1[i], array2[i]);
 		i++;
 	}
-}
+} */
