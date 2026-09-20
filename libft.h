@@ -6,7 +6,7 @@
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/19 19:34:11 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/09/20 19:34:42 by tlasnier         ###   ########.fr       */
+/*   Updated: 2026/09/20 23:28:16 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,6 @@ size_t	ft_strlen(const char *str);
 void	*ft_memset(void *ptr, int v, size_t length);
 void	ft_bzero(void *ptr, size_t length);
 void	*ft_memcpy(void *dest, const void *src, size_t length);
+void	*ft_memmove(void *dest, const void *src, size_t length);
 
 #endif
