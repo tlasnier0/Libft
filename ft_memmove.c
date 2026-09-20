@@ -6,7 +6,7 @@
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/20 21:57:35 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/09/20 23:27:37 by tlasnier         ###   ########.fr       */
+/*   Updated: 2026/09/20 23:28:59 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,8 @@ int main(int argc, char **argv)
 	ft_memmove(toprint2 + 1, toprint2, ft_atoi(argv[2]) - 1);
 	while (i < ft_atoi(argv[2]))
 	{
-		printf("value n°%d\n   memmove: %c\nft_memmove: %c\n", i, toprint[i], toprint2[i]);
+		printf("value n°%d\n   memmove: %c\nft_memmove: %c\n",
+		i, toprint[i], toprint2[i]);
 		i++;
 	}
 } */
