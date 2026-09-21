@@ -6,7 +6,7 @@
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/19 19:34:11 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/09/21 18:32:58 by tlasnier         ###   ########.fr       */
+/*   Updated: 2026/09/21 18:48:26 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,6 @@ void	*ft_memcpy(void *dest, const void *src, size_t length);
 void	*ft_memmove(void *dest, const void *src, size_t length);
 size_t	ft_strlcpy(char *dest, const char *src, size_t length);
 size_t	ft_strlcat(char *dest, const char *src, size_t length);
+int	ft_toupper(int c);
 
 #endif
