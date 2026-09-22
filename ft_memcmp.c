@@ -1,33 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/22 21:50:28 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/09/22 22:59:18 by tlasnier         ###   ########.fr       */
+/*   Created: 2026/09/22 22:51:26 by tlasnier          #+#    #+#             */
+/*   Updated: 2026/09/22 23:09:23 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *ptr, int tofind, size_t length)
+int	ft_memcmp(const void *ptr1, const void *ptr2, size_t length)
 {
-	const unsigned char	*ptr2;
-	int					tofind2;
+	const unsigned char	*pt1;
+	const unsigned char	*pt2;
 	size_t				i;
 
-	ptr2 = (const unsigned char *)ptr;
+	pt1 = ptr1;
+	pt2 = ptr2;
 	i = 0;
-	tofind2 = (unsigned char)tofind;
 	while (i < length)
 	{
-		if (ptr2[i] == tofind2)
-			return ((void *)&ptr2[i]);
+		if (pt1[i] != pt2[i])
+			return (pt1[i] - pt2[i]);
 		i++;
 	}
-	return (NULL);
+	return (0);
 }
 
 /* #include <stdio.h>
@@ -36,7 +36,7 @@ void	*ft_memchr(const void *ptr, int tofind, size_t length)
 int main(int argc, char **argv)
 {
 	(void)argc;
-	printf("   memchr: %s\nft_memchr: %s\n",
-	(char *)memchr(argv[1], ft_atoi(argv[2]), ft_atoi(argv[3])),
-	(char *)ft_memchr(argv[1], ft_atoi(argv[2]), ft_atoi(argv[3])));
+	printf("   memcmp:%d\nft_memcmp:%d\n",
+	memcmp(argv[1], argv[2], ft_atoi(argv[3])),
+	ft_memcmp(argv[1], argv[2], ft_atoi(argv[3])));
 } */
