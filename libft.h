@@ -6,7 +6,7 @@
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/19 19:34:11 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/09/21 22:48:38 by tlasnier         ###   ########.fr       */
+/*   Updated: 2026/09/22 22:13:06 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,6 @@ int		ft_tolower(int c);
 char	*ft_strchr(char *str, int c);
 char	*ft_strrchr(char *str, int c);
 int		ft_strncmp(const char *str1, const char *str2, size_t length);
+void	*ft_memchr(const void *ptr, int tofind, size_t length);
 
 #endif
