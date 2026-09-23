@@ -6,7 +6,7 @@
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/19 19:34:11 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/09/22 23:35:12 by tlasnier         ###   ########.fr       */
+/*   Updated: 2026/09/23 02:34:35 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,5 +36,6 @@ int		ft_strncmp(const char *str1, const char *str2, size_t length);
 void	*ft_memchr(const void *ptr, int tofind, size_t length);
 int		ft_memcmp(const void *ptr1, const void *ptr2, size_t length);
 char	*ft_strnstr(const char *str, const char *to_find, size_t length);
+void	*ft_calloc(size_t length, size_t size);
 
 #endif
