@@ -6,13 +6,13 @@
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 17:59:30 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/09/24 18:45:23 by tlasnier         ###   ########.fr       */
+/*   Updated: 2026/10/01 02:59:52 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-int	ptrlen(char const *s, char c)
+static int	ptrlen(char const *s, char c)
 {
 	int	i;
 	int	res;
@@ -28,7 +28,7 @@ int	ptrlen(char const *s, char c)
 	return (res);
 }
 
-int	charlen(char const *s, char c, int i)
+static int	charlen(char const *s, char c, int i)
 {
 	int	res;
 
@@ -41,7 +41,7 @@ int	charlen(char const *s, char c, int i)
 	return (res);
 }
 
-char	**splitloop(char const *s, char c, int i, char **res)
+static char	**splitloop(char const *s, char c, int i, char **res)
 {
 	int	j;
 	int	k;
