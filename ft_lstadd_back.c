@@ -6,7 +6,7 @@
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/02 02:50:36 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/10/02 03:50:20 by tlasnier         ###   ########.fr       */
+/*   Updated: 2026/10/03 00:49:16 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	if (!lst)
+	if (!*lst)
 	{
 		*lst = new;
 		return ;
