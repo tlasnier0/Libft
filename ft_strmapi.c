@@ -6,12 +6,11 @@
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/01 03:10:32 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/10/03 01:04:02 by tlasnier         ###   ########.fr       */
+/*   Updated: 2026/10/03 01:23:05 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

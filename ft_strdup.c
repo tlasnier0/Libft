@@ -6,11 +6,10 @@
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/23 02:35:37 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/09/23 02:44:11 by tlasnier         ###   ########.fr       */
+/*   Updated: 2026/10/03 01:22:43 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strdup(const char *src)

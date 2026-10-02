@@ -6,11 +6,10 @@
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/01 04:01:18 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/10/03 01:06:21 by tlasnier         ###   ########.fr       */
+/*   Updated: 2026/10/03 01:21:54 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include "libft.h"
 
 void	ft_putendl_fd(char *s, int fd)

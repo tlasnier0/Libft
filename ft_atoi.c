@@ -6,9 +6,11 @@
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/19 18:30:36 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/09/19 18:55:44 by tlasnier         ###   ########.fr       */
+/*   Updated: 2026/10/03 01:24:43 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {

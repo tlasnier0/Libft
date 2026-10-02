@@ -6,11 +6,11 @@
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/21 22:13:44 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/09/21 22:21:45 by tlasnier         ###   ########.fr       */
+/*   Updated: 2026/10/03 01:22:37 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strchr(char *str, int c)
 {

@@ -6,11 +6,11 @@
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/25 01:46:56 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/10/01 02:55:37 by tlasnier         ###   ########.fr       */
+/*   Updated: 2026/10/03 01:20:12 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 static int	charlen(long int n)
 {

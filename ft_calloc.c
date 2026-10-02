@@ -6,12 +6,11 @@
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/23 02:20:01 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/09/23 02:34:24 by tlasnier         ###   ########.fr       */
+/*   Updated: 2026/10/03 01:19:43 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 void	*ft_calloc(size_t length, size_t size)
 {

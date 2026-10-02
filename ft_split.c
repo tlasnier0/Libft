@@ -6,11 +6,11 @@
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 17:59:30 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/10/03 01:02:33 by tlasnier         ###   ########.fr       */
+/*   Updated: 2026/10/03 01:22:28 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 static int	ptrlen(char const *s, char c)
 {

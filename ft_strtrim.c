@@ -6,12 +6,11 @@
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 17:02:02 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/10/03 01:01:34 by tlasnier         ###   ########.fr       */
+/*   Updated: 2026/10/03 01:23:14 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 static int	is_char(char c, char const *set)
 {
