@@ -6,7 +6,7 @@
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 17:02:02 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/10/01 03:00:21 by tlasnier         ###   ########.fr       */
+/*   Updated: 2026/10/03 01:01:34 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,17 +33,15 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int		trim_start;
 	int		i;
 
+	if (!s1 || !set)
+		return (NULL);
 	i = 0;
 	while (s1[i] && is_char(s1[i], set))
 		i++;
 	trim_start = i;
 	if (((size_t)trim_start >= ft_strlen(s1)) || !s1[0])
 	{
-		res = malloc(sizeof(char) * 1);
-		if (!res)
-			return (NULL);
-		res[0] = 0;
-		return (res);
+		return (ft_strdup(""));
 	}
 	i = ft_strlen(s1) - 1;
 	while (s1[i] && is_char(s1[i], set))

@@ -6,7 +6,7 @@
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 17:59:30 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/10/01 02:59:52 by tlasnier         ###   ########.fr       */
+/*   Updated: 2026/10/03 01:02:33 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,8 @@ char	**ft_split(char const *s, char c)
 	char	**res;
 	int		i;
 
+	if (!s)
+		return (NULL);
 	i = 0;
 	while (s[i] && s[i] == c)
 		i++;

@@ -6,7 +6,7 @@
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/02 03:38:35 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/10/02 03:56:56 by tlasnier         ###   ########.fr       */
+/*   Updated: 2026/10/03 01:15:15 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
+	if (!lst || !f)
+		return ;
 	while (lst != NULL)
 	{
 		f(lst->content);

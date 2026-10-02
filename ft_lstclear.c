@@ -6,7 +6,7 @@
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/02 03:26:45 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/10/02 03:50:43 by tlasnier         ###   ########.fr       */
+/*   Updated: 2026/10/03 01:14:59 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*temp;
 
+	if (!lst || !del)
+		return ;
 	while (*lst != NULL)
 	{
 		temp = (*lst)->next;

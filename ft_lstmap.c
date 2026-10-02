@@ -6,7 +6,7 @@
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/03 00:24:16 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/10/03 00:52:29 by tlasnier         ###   ########.fr       */
+/*   Updated: 2026/10/03 01:16:01 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	void	*temp_content;
 	t_list	*temp_node;
 
+	if (!lst || !f || !del)
+		return (NULL);
 	res = NULL;
 	while (lst != NULL)
 	{

@@ -6,7 +6,7 @@
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/23 21:35:00 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/09/24 16:54:00 by tlasnier         ###   ########.fr       */
+/*   Updated: 2026/10/03 00:58:40 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*res;
 
+	if (!s1 || !s2)
+		return (NULL);
 	res = malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
 	if (!res)
 		return (NULL);

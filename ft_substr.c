@@ -6,7 +6,7 @@
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/23 21:11:54 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/09/23 21:33:42 by tlasnier         ###   ########.fr       */
+/*   Updated: 2026/10/03 00:57:40 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*res;
 
+	if (!s)
+		return (NULL);
 	if (start >= ft_strlen(s))
 	{
 		res = malloc(sizeof(char) * 1);

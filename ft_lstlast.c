@@ -6,7 +6,7 @@
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/02 02:40:39 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/10/02 03:50:56 by tlasnier         ###   ########.fr       */
+/*   Updated: 2026/10/03 01:11:26 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 t_list	*ft_lstlast(t_list *lst)
 {
+	if (!lst)
+		return (NULL);
 	while (lst->next != NULL)
 		lst = lst->next;
 	return (lst);
