@@ -6,7 +6,7 @@
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/02 00:43:50 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/10/02 02:25:29 by tlasnier         ###   ########.fr       */
+/*   Updated: 2026/10/02 03:50:28 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,6 @@ int main(int argc, char **argv)
 	res_struct = ft_lstnew(ft_strdup(argv[1]));
 	base_struct = ft_lstnew(ft_strdup(argv[2]));
 	ft_lstadd_front(&base_struct, res_struct);
-	printf("ft_lstadd_front: %s/%s",
+	printf("ft_lstadd_front: %s/%s\n",
 	(char *)base_struct->content, (char *)base_struct->next->content);
 } */

@@ -6,7 +6,7 @@
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/02 03:26:45 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/10/02 03:37:35 by tlasnier         ###   ########.fr       */
+/*   Updated: 2026/10/02 03:50:43 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,6 @@ int main(int argc, char **argv)
 	struct2 = ft_lstnew(ft_strdup(argv[2]));
 	ft_lstadd_back(&struct1, struct2);
 	ft_lstclear(&struct1, del);
-	printf("ft_lstclear: %s", (char *)struct1->content);
+	printf("ft_lstclear: %s\n", (char *)struct1->content);
 	//segfault normal -> on a suprpimer la structure (but de la fonction)
 } */

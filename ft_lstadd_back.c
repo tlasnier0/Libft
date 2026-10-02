@@ -6,7 +6,7 @@
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/02 02:50:36 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/10/02 03:02:07 by tlasnier         ###   ########.fr       */
+/*   Updated: 2026/10/02 03:50:20 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,5 @@ int main(int argc, char **argv)
 	struct1 = ft_lstnew(ft_strdup(argv[1]));
 	struct2 = ft_lstnew(ft_strdup(argv[2]));
 	ft_lstadd_back(&struct1, struct2);
-	printf("ft_lstadd_back: %s", (char *)struct1->next->content);
+	printf("ft_lstadd_back: %s\n", (char *)struct1->next->content);
 } */
