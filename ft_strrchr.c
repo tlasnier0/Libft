@@ -6,7 +6,7 @@
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/21 22:22:38 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/09/21 22:26:31 by tlasnier         ###   ########.fr       */
+/*   Updated: 2026/10/03 01:53:48 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,12 @@ char	*ft_strrchr(char *str, int c)
 {
 	int	i;
 
-	i = ft_strlen(str) - 1;
-	while (i >= 0 && str[i] != c)
+	i = ft_strlen(str);
+	while (i >= 0 && str[i] != (char)c)
 		i--;
-	if (i < 0)
-		return (NULL);
-	return (&str[i]);
+	if (i >= 0)
+		return (&str[i]);
+	return (NULL);
 }
 
 /* #include <stdio.h>

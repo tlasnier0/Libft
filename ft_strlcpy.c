@@ -6,7 +6,7 @@
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/21 00:22:03 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/09/23 21:25:44 by tlasnier         ###   ########.fr       */
+/*   Updated: 2026/10/03 01:59:59 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t length)
 {
 	size_t	i;
 
+	if (length == 0)
+		return (ft_strlen(src));
 	i = 0;
 	while (i < length - 1 && src[i])
 	{

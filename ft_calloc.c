@@ -6,7 +6,7 @@
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/23 02:20:01 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/10/03 01:19:43 by tlasnier         ###   ########.fr       */
+/*   Updated: 2026/10/03 02:11:12 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	*ft_calloc(size_t length, size_t size)
 	unsigned char	*ptr;
 	size_t			i;
 
+	if (length && size > ((size_t)-1) / length)
+		return (NULL);
 	i = 0;
 	ptr = malloc(length * size);
 	if (!ptr)
