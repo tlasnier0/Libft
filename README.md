@@ -60,6 +60,5 @@ To use this library in another C program:
 ### AI Usage
 Artificial Intelligence was used strictly as a conceptual tutor and language assistant:
   
-• Conceptual Learning: Explaining low-level C mechanisms and complex programming logic (such as pointer arithmetic, heap allocation behavior, and data structures) for theoretical understanding, without      
-writing or generating any project code.
-• Documentation Review: Reviewing and refining the French-to-English translation of this README, correcting phrasing errors, and improving overall language fluency.
+* Conceptual Learning: Explaining low-level C mechanisms and complex programming logic (such as pointer arithmetic, heap allocation behavior, and data structures) for theoretical understanding, without writing or generating any project code.
+* Documentation Review: Reviewing and refining the French-to-English translation of this README, correcting phrasing errors, and improving overall language fluency.
