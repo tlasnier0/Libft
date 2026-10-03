@@ -5,7 +5,7 @@
 ## Description
 **Libft** is the very first project of the 42 curriculum. The goal of this project is to build a custom C standard library from scratch by re-implementing essential libc functions as well as additional utility routines (memory handling, string manipulation, and linked list management).
 
-This library serves as a fundamental, reusable foundation that will be integrated into future curriculum projects such as `ft_printf`, `get_next_line`, and `minishell`.
+This library serves as a fundamental, reusable foundation that will be integrated into future curriculum projects such as `ft_printf`, `get_next_line`, ...
 
 ---
 
