@@ -56,7 +56,5 @@ To use this library in another C program:
 * GNU C Library documentation on dynamic memory allocation and pointer arithmetic.
 
 ### AI Usage
-Artificial Intelligence was used exclusively as a conceptual tutor and theoretical guide. Specifically, it was consulted for:
-* Clarifying complex memory mechanisms (heap allocation safeguards, cascading free routines on `malloc` failure in `ft_split`, pointer arithmetic edge cases).
-* Understanding low-level diagnostic reports from testing suites and debugging allocator behaviors.
-* No code was accepted without a full line-by-line understanding, ensuring the entire codebase can be defended and modified during peer evaluations.
+Artificial Intelligence was used solely as a conceptual tutor to help understand complex programming logic and low-level C mechanisms (such as pointer arithmetic, heap memory management, and data structures). 
+It was used purely for theoretical guidance and conceptual explanations, without generating any project code.* No code was accepted without a full line-by-line understanding, ensuring the entire codebase can be defended and modified during peer evaluations.
