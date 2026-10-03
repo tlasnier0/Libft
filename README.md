@@ -54,7 +54,7 @@ To use this library in another C program:
 * Linux Programmer's Manual (`man 3`) for standard libc function definitions and POSIX requirements.
 * [Koor.fr](https://koor.fr/Index.wp) - Documentation and tutorials on C standard library functions used for Part 1.
 * GNU C Library documentation on dynamic memory allocation and pointer arithmetic.
-* [DeepL](https://www.deepl.com) - Translation tool used to assist with drafting the README file.
+* [DeepL](https://www.deepl.com) - Translation tool used to assist with writing the README file.
 
 
 ### AI Usage
