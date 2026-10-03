@@ -24,10 +24,6 @@ To use this library in another C program:
    ```c
    #include "libft.h"
    ```
-2. Compile your program by linking the static library:
-   ```bash
-   cc -Wall -Wextra -Werror main.c -L. -lft -o my_program
-   ```
 
 ---
 
