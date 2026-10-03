@@ -6,13 +6,13 @@
 /*   By: tlasnier <tlasnier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 17:59:30 by tlasnier          #+#    #+#             */
-/*   Updated: 2026/10/03 01:22:28 by tlasnier         ###   ########.fr       */
+/*   Updated: 2026/10/03 02:29:18 by tlasnier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ptrlen(char const *s, char c)
+static int	ft_ptrlen(char const *s, char c)
 {
 	int	i;
 	int	res;
@@ -28,7 +28,7 @@ static int	ptrlen(char const *s, char c)
 	return (res);
 }
 
-static int	charlen(char const *s, char c, int i)
+static int	ft_charlen(char const *s, char c, int i)
 {
 	int	res;
 
@@ -39,6 +39,20 @@ static int	charlen(char const *s, char c, int i)
 		res++;
 	}
 	return (res);
+}
+
+static char	**ft_free_all(char **res, int count)
+{
+	int	i;
+
+	i = 0;
+	while (i < count)
+	{
+		free(res[i]);
+		i++;
+	}
+	free(res);
+	return (NULL);
 }
 
 static char	**splitloop(char const *s, char c, int i, char **res)
@@ -54,9 +68,9 @@ static char	**splitloop(char const *s, char c, int i, char **res)
 		{
 			res[j++][k] = 0;
 			k = 0;
-			res[j] = malloc(sizeof(char) * (charlen(s, c, i + 1) + 1));
+			res[j] = malloc(sizeof(char) * (ft_charlen(s, c, i + 1) + 1));
 			if (!res[j])
-				return (NULL);
+				return (ft_free_all(res, j));
 		}
 		else if (s[i] != c)
 			res[j][k++] = s[i];
@@ -85,12 +99,12 @@ char	**ft_split(char const *s, char c)
 		res[0] = NULL;
 		return (res);
 	}
-	res = malloc(sizeof(char *) * (ptrlen(s, c) + 1));
+	res = malloc(sizeof(char *) * (ft_ptrlen(s, c) + 1));
 	if (!res)
 		return (NULL);
-	res[0] = malloc(sizeof(char) * (charlen(s, c, i) + 1));
+	res[0] = malloc(sizeof(char) * (ft_charlen(s, c, i) + 1));
 	if (!res[0])
-		return (NULL);
+		return (ft_free_all(res, 0));
 	res = splitloop(s, c, i, res);
 	return (res);
 }
