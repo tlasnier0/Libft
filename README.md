@@ -54,7 +54,12 @@ To use this library in another C program:
 * Linux Programmer's Manual (`man 3`) for standard libc function definitions and POSIX requirements.
 * [Koor.fr](https://koor.fr/Index.wp) - Documentation and tutorials on C standard library functions used for Part 1.
 * GNU C Library documentation on dynamic memory allocation and pointer arithmetic.
+* [DeepL](https://www.deepl.com) - Translation tool used to assist with drafting the README file.
+
 
 ### AI Usage
-Artificial Intelligence was used solely as a conceptual tutor to help understand complex programming logic and low-level C mechanisms (such as pointer arithmetic, heap memory management, and data structures). 
-It was used purely for theoretical guidance and conceptual explanations, without generating any project code.
+Artificial Intelligence was used strictly as a conceptual tutor and language assistant:
+  
+• Conceptual Learning: Explaining low-level C mechanisms and complex programming logic (such as pointer arithmetic, heap allocation behavior, and data structures) for theoretical understanding, without      
+writing or generating any project code.
+• Documentation Review: Reviewing and refining the French-to-English translation of this README, correcting phrasing errors, and improving overall language fluency.
